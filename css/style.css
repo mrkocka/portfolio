@@ -242,7 +242,7 @@ color: #ffffffce;
 .box .headings{
     font-size: 3rem;
     margin-top: 1%;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 .box:hover{
     background-position: left bottom;
@@ -251,13 +251,25 @@ color: #ffffffce;
     box-shadow: 0 0 20px rgb(147,22,33);
 }
 
+.box ul{
+    margin-top: 8%;
+}
+
+.price{
+    margin-top: 8%;
+}
+
 .t-button{
-    font-size: 1.1rem;
-    margin-top: 3%;
+    font-size: 1.4rem;
+    margin-top: 8%;
     margin-left: 5%;
     align-self: flex-end;
     color: black;
 }
+.t-button:hover{
+    color: whitesmoke;
+}
+
 .box img{
     width: 80px;
     height: 80px;
@@ -337,7 +349,7 @@ margin-left: 15px;
 }
 
 .footer-flex-item img {
-    width: 10vh;
+    width: 8vh;
     margin-top: 15px;
 }
 
@@ -346,7 +358,7 @@ margin-left: 15px;
     width: 600px;
 }
 .item2 a{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .item2 a:hover{
@@ -368,8 +380,8 @@ margin-left: 15px;
     width: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    font-size: 1.4rem;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
     align-items: center;
 }
 
@@ -379,171 +391,5 @@ margin-left: 15px;
 }
 .item3 a:hover{
     color: rgb(147,22,33);
-}
-
-
-/*---------------------------------------------------------Aboute_page--------------------------------------------------------------------------------------*/
-
-
-
-/*--------------------Stycki_button---------------------------------*/
-nav div{
-    position: fixed;
-    top: 3%;
-    left: 1%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-
-
-/*--------------------Section_1---------------------------------*/
-.section-1-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-;
-    font-size: 1.6rem;
-    padding: 1rem 3rem;
-    margin: 0 auto;
-    border: 1px solid black;
-    
-}
-.section-1-container img{
-    width: 20%;
-}
-
-.section-1-container h1{
-    font-family: 'Amatic SC', cursive;
-    font-size: 2.9rem;
-    font-weight:900;
-    color: #ffffffce;
-}
-.section-1-container h2{
-    font-family:'Open Sans Condensed', sans-serif;
-    font-size: 1.8rem;
-}
-
-/*--------------------Section_2---------------------------------*/
-.section-2-container{
-    display: flex;
-    background-color:rgba(255, 99, 71, 0.616);
-    font-size: 1.6rem;
-    padding: 1rem 3rem;
-    margin: 0 auto;
-    border: 1px solid black;
-  
-}
-
-.section-2-container div{
-    background-color: violet;
-    font-size: 1.6rem;
-    padding: 1rem 3rem;
-    margin: 0 auto;
-    border: 1px solid black;
-}
-
-
-/*--------------------Section_3---------------------------------*/
-.section-3-container{
-    display: flex;
-    justify-content: flex-end;
-    background-color:rgba(128, 128, 128, 0.801);
-    font-size: 1.6rem;
-  
-   
-    border: 1px solid black;
-    
-}
-
-
-
-/*--------------------Section_4---------------------------------*/
-.section-4-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:rgba(255, 255, 0, 0.719);
-    font-size: 1.6rem;
-    padding: 1rem 3rem;
-    border: 1px solid black;   
-}
-
-.section-4-container div{
-    background-color: violet;
-    font-size: 1.6rem;
-    padding: 1rem 3rem;
-    margin: 1%;
-    border: 1px solid black;
-    
-}
-
-/*--------------------Section_5---------------------------------*/
-.section-5-container{
-    display: flex;
-    background-color:rgba(255, 99, 71, 0.616);
-    font-size: 1.6rem;
-    padding: 1rem 3rem;
-    margin: 0 auto;
-    border: 1px solid black;
-}
-.section-5-container div{
-    background-color: violet;
-    font-size: 1.6rem;
-    padding: 1rem 3rem;
-    margin: 0 auto;
-    border: 1px solid black;
-}
-
-
-
-
-/*--------------------Section_6---------------------------------*/
-.section-6-container{
-    display: flex;
-    background-color:rgba(255, 99, 71, 0.616);
-    font-size: 1.6rem;
-    padding: 1rem 3rem;
-    margin: 0 auto;
-    border: 1px solid black;
-}
-.section-6-container div{
-    background-color: violet;
-    font-size: 1.6rem;
-    padding: 1rem 3rem;
-    margin: 0 auto;
-    border: 1px solid black;
-}
-
-
-/*--------------------Section_7---------------------------------*/
-.section-7-container{
-    display: flex;
-    justify-content: flex-end;
-    background-color:rgba(128, 128, 128, 0.801);
-    font-size: 1.6rem;
-    margin: 0 auto;
-    border: 1px solid black;
-    
-}
-
-/*--------------------Section_8---------------------------------*/
-
-.section-8-container{
-    display: flex;
-
-    background-color:rgba(255, 99, 71, 0.616);
-    font-size: 1.6rem;
-    padding: 1rem 3rem;
-    margin: 0 auto;
-    border: 1px solid black;
-}
-.section-8-container div{
-    background-color: violet;
-    font-size: 1.6rem;
-    padding: 1rem 3rem;
-    margin: 0 auto;
-    border: 1px solid black;
 }
 
