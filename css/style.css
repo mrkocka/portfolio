@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*---------------------------------------------------------Home_page--------------------------------------------------------------------------------------*/
+
+
+body{
+    background-color: black;
+}
+
+/*Navbar*/
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.651);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #eeeeff;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: #7f7caf83;
+    color: #1d1e18;
+    box-shadow: 0 0 10px #7f7caf83;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(0, 0, 0, 0.377);
+    height: 830px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffffce ;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../img/klavi_bg.jpg) no-repeat center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+   
+   
+}
+.headings{
+    font-family: 'Amatic SC', cursive;
+    font-size: 5rem;
+    text-align: center;
+    margin:40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background: transparent;
+    background-color: rgba(128, 128, 128, 0.219);
+    border: 1px solid white;
+    color: #eeeeff;
+    outline: none;
+    transition: .6s ease;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.2rem;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+/* About Section */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.897);
+    color: #ffffffce;
+}
+#pic{
+    display: flex;
+    
+}
+
+#pic img{
+    width: 366px;
+    height: 488px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+    
+
+}
+#intro h2 {
+    font-size: 2rem;
+}
+#intro h3{
+    font-size: 1.3rem;
+    padding-top: .2rem;
+    padding-bottom: 1.3rem;
+}
+
+/*Porfolio Section */
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(128, 128, 128, 0.158);
+    color: #ffffffce;
+    align-items: center;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 500px;
+    height: 333px;
+    margin: 10px;
+}
+
+/* Services Section */
+
+.services, h2{
+color: #ffffffce;
+}
+
+
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-image: url(../img/black-bg.jpg);
+}
+
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    margin: 20px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(147,22,33)50%, #eeeeff 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box .headings{
+    font-size: 3rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border:none;
+    box-shadow: 0 0 20px rgb(147,22,33);
+}
+.box img{
+    width: 80px;
+    height: 80px;
+}
+
+.t-button{
+    font-size: 1.1rem;
+    margin-top: 3%;
+    margin-left: 5%;
+    align-self: flex-end;
+}
+.box img{
+    width: 80px;
+    height: 80px;
+}
+/* Contact Section*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.897);
+    color: #ffffffce;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 10px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+
+
+/* Footer Section */
+
+
+footer{
+    background-color:rgba(128, 128, 128, 0.158);
+}
+
+footer, a{
+    color: #ffffffce;
+    text-decoration: none;
+}
+
+.footer-flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+/* 1. item logo@copy */
+
+.item1{ 
+margin-left: 15px;
+}
+.item1 p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.f1-felx-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-flex-item img {
+    width: 10vh;
+    margin-top: 15px;
+}
+
+/* 2. item socila_media */
+.item2{
+    width: 600px;
+}
+.item2 a{
+    font-size: 4rem;
+}
+
+.item2 a:hover{
+    color: rgb(147,22,33);
+   
+}
+
+
+.f2-felx-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* 3. item adress_tel */
+.f3-flex-box {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    align-items: center;
+}
+
+.item3{
+    margin-right: 15px;
+    
+}
+.item3 a:hover{
+    color: rgb(147,22,33);
+}
+
+
+/*---------------------------------------------------------Aboute_page--------------------------------------------------------------------------------------*/
+
+
+
+/*--------------------Stycki_button---------------------------------*/
+nav div{
+    position: fixed;
+    top: 3%;
+    left: 1%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+
+/*--------------------Section_1---------------------------------*/
+.section-1-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    border: 1px solid black;
+    
+}
+.section-1-container img{
+    width: 20%;
+}
+
+.section-1-container h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.9rem;
+    font-weight:900;
+    color: #ffffffce;
+}
+.section-1-container h2{
+    font-family:'Open Sans Condensed', sans-serif;
+    font-size: 1.8rem;
+}
+
+/*--------------------Section_2---------------------------------*/
+.section-2-container{
+    display: flex;
+    background-color:rgba(255, 99, 71, 0.616);
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    border: 1px solid black;
+  
+}
+
+.section-2-container div{
+    background-color: violet;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+
+/*--------------------Section_3---------------------------------*/
+.section-3-container{
+    display: flex;
+    justify-content: flex-end;
+    background-color:rgba(128, 128, 128, 0.801);
+    font-size: 1.6rem;
+  
+   
+    border: 1px solid black;
+    
+}
+
+
+
+/*--------------------Section_4---------------------------------*/
+.section-4-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(255, 255, 0, 0.719);
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    border: 1px solid black;   
+}
+
+.section-4-container div{
+    background-color: violet;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin: 1%;
+    border: 1px solid black;
+    
+}
+
+/*--------------------Section_5---------------------------------*/
+.section-5-container{
+    display: flex;
+    background-color:rgba(255, 99, 71, 0.616);
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.section-5-container div{
+    background-color: violet;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+
+
+
+/*--------------------Section_6---------------------------------*/
+.section-6-container{
+    display: flex;
+    background-color:rgba(255, 99, 71, 0.616);
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.section-6-container div{
+    background-color: violet;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+
+/*--------------------Section_7---------------------------------*/
+.section-7-container{
+    display: flex;
+    justify-content: flex-end;
+    background-color:rgba(128, 128, 128, 0.801);
+    font-size: 1.6rem;
+    margin: 0 auto;
+    border: 1px solid black;
+    
+}
+
+/*--------------------Section_8---------------------------------*/
+
+.section-8-container{
+    display: flex;
+
+    background-color:rgba(255, 99, 71, 0.616);
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.section-8-container div{
+    background-color: violet;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+

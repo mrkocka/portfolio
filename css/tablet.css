@@ -1,0 +1,97 @@
+/*---------------------------------------------------------Home_page--------------------------------------------------------------------------------------*/
+
+
+/*Navbar*/
+
+.navbar ul{
+    flex-wrap: wrap;
+    justify-content:center ;
+}
+
+
+
+
+/*Headings*/
+.headings{
+    font-size: 2.8rem;
+}
+
+
+
+
+/*About*/
+#pic{
+    flex-direction: column;
+    align-items: center;
+}
+#pic img{
+    width: 275px;
+    height: 367px;
+}
+#intro h2, h3 {
+    text-align: center;
+    
+}
+#intro h3{
+    padding: 10px;
+}
+#intro p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Contact*/
+.input{
+    width: 60%;
+}
+#msg{
+    width:55%;
+}
+#send{
+    width: 20%;
+}
+
+
+/*   Footer   */
+
+.footer-flex-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.item1, .item2, .item3{
+    margin-top: 15px;
+}
+
+.item1{
+    order: 2;
+}
+.item3 a {
+    margin-top: 10px;
+}
+
+
+/*---------------------------------------------------------Aboute_page--------------------------------------------------------------------------------------*/
+
+/*--------------------Section_1---------------------------------*/
+
+.section-1-container img{
+    width: 38%;
+}
+
+/*--------------------Section_2---------------------------------*/
+.section-2-container{
+    flex-direction: column;
+}
+
+/*--------------------Section_5---------------------------------*/
+.section-5-container{
+    flex-direction: column;
+}
+
+/*--------------------Section_8---------------------------------*/
+
+.section-8-container{
+    flex-direction: column;
+}
+

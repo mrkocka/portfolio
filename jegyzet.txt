@@ -1,0 +1,48 @@
+Ez a honlap építéséhez való video:
+
+https://www.youtube.com/watch?v=zX3ikOsQg58
+
+itt tartasz: 24.39
+
+
+----------------------------------------------------------------------------------------
+
+fejléchez betűkészlet... a betöltő link már a metában 
+font-family: 'Amatic SC', cursive;
+
+Állandó betűtípiusaim 
+ font-family:'Open Sans Condensed', sans-serif;
+ font-family: 'Amatic SC', cursive;
+
+-----------------------------------------------------------------------------
+
+Ez egy lábléc fejlesztő video....
+
+https://www.youtube.com/watch?v=FRRlFLfdvBE&t=49s
+
+itt tartasz: 0.00
+
+
+------------------------------------------------------------------------------
+
+Ez egy kicsit egyszerűbb lábléc...
+
+https://www.youtube.com/watch?v=f4J3uaNNYTE
+
+itt tartasz: 8.11
+
+
+
+ikonok fejléchez
+
+<a href="#" class="fa fa-phone">123456</a>
+
+<a href="#" class="fa fa-envelope">info@mrkocka.hu</a>
+
+
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-pinterest"></a>
+                        <a href="#" class="fa fa-github"></a>
