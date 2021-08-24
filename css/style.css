@@ -139,12 +139,14 @@ body{
 #intro h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-family: 'Amatic SC', cursive;
 }
 #intro p {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     padding: 2%;
     line-height: 150%;
+    font-family:'Open Sans Condensed', sans-serif;
 }
 #intro h3{
 
@@ -153,10 +155,26 @@ body{
     padding-bottom: 1.3rem;
 }
 
-#experience img{
-    width: 30px;
-    height: 30px;
+#experience {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
+.exlogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    font-family:'Open Sans Condensed', sans-serif;
+    
+}   
+
+#experience img{
+    width: 100%;
+    
+}
+
+
 
 /*Porfolio Section */
 
@@ -167,6 +185,7 @@ body{
     color: #ffffffce;
     align-items: center;
     padding: 20px;
+    font-family:'Open Sans Condensed', sans-serif;
 }
 .gallery{
     display: flex;
@@ -178,11 +197,10 @@ body{
     width: 500px;
     height: 333px;
     margin: 10px;
-}
-
-
-/*  Experiences  */
+    cursor: pointer;
+    transition: 0.3s;
     
+}
 
 
 /* Services Section */
@@ -205,13 +223,11 @@ color: #ffffffce;
     background-image: url(../img/black-bg.jpg);
 }
 
-
-
 .box{
     display: flex;
     flex-direction: column;
     width: 350px;
-    height: 350px;
+    height:500px;
     border: 1px solid black;
     margin: 20px;
     align-items: center;
@@ -222,6 +238,7 @@ color: #ffffffce;
     background-size: 100% 200%;
     transition: all .8s;
 }
+
 .box .headings{
     font-size: 3rem;
     margin-top: 1%;
@@ -234,12 +251,12 @@ color: #ffffffce;
     box-shadow: 0 0 20px rgb(147,22,33);
 }
 
-
 .t-button{
     font-size: 1.1rem;
     margin-top: 3%;
     margin-left: 5%;
     align-self: flex-end;
+    color: black;
 }
 .box img{
     width: 80px;
