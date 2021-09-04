@@ -95,3 +95,7 @@
     flex-direction: column;
 }
 
+/*------- Alapcsomag, Közepes csomag, Nagy csomag, Extra csomag------------------------ */
+#textSection{
+    width: 90%;
+}
