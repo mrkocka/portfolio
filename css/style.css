@@ -253,7 +253,18 @@ color: #ffffffce;
 }
 
 .box ul{
-    margin-top: 8%;
+    margin-top: 2%;
+}
+
+.careIcon{
+    font-size: 4rem;
+    margin-bottom: 1%;
+}
+
+.headingsCard{
+    font-size: 2.5rem;
+    font-family: 'Amatic SC', cursive;
+    margin-bottom: 1%;
 }
 
 .price{
@@ -261,8 +272,8 @@ color: #ffffffce;
 }
 
 .t-button{
-    font-size: 1.4rem;
-    margin-top: 8%;
+    font-size: 1.2rem;
+    margin-top: 1%;
     margin-left: 5%;
     align-self: flex-end;
     color: black;
