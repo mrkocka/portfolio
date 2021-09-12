@@ -214,6 +214,8 @@ color: #ffffffce;
     display: flex;
     flex-direction: column;
     padding: 20px;
+    
+    
 }
 .row{
     display: flex;
@@ -221,19 +223,21 @@ color: #ffffffce;
     flex-wrap: wrap;
     box-sizing: border-box;
     background-image: url(../img/black-bg.jpg);
+    background-size:cover;
     background-repeat: no-repeat;
+   
 }
 
 .box{
     display: flex;
     flex-direction: column;
-    width: 350px;
-    height:500px;
+    width: 450px;
+    height:650px;
     border: 1px solid black;
     margin: 20px;
     align-items: center;
     text-align: justify;
-    padding: 10px;
+    padding: 20px;
     border-radius: 15px;
     background: linear-gradient(to top, rgb(147,22,33)50%, #eeeeff 50%);
     background-size: 100% 200%;
@@ -241,7 +245,7 @@ color: #ffffffce;
 }
 
 .box .headings{
-    font-size: 3rem;
+    font-size: 4rem;
     margin-top: 1%;
     margin-bottom: 2%;
 }
@@ -252,31 +256,53 @@ color: #ffffffce;
     box-shadow: 0 0 20px rgb(147,22,33);
 }
 
-.box ul{
-    margin-top: 2%;
+.box ul {
+    margin-top: 1%;
+    text-align: center;
+    list-style: none;
+    font-family:'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    
+}
+.box ul li {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.box p{
+    font-family:'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
 }
 
 .careIcon{
-    font-size: 4rem;
-    margin-bottom: 1%;
+    font-size: 5.5rem;
+    margin-bottom: 2%;
 }
 
 .headingsCard{
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-family: 'Amatic SC', cursive;
-    margin-bottom: 1%;
+   
 }
 
 .price{
-    margin-top: 8%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: red;
+    font-size: 3rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight:700;
 }
 
 .t-button{
-    font-size: 1.2rem;
-    margin-top: 1%;
+    font-size: 2rem;
+    margin-top: .5%;
     margin-left: 5%;
     align-self: flex-end;
     color: black;
+    font-family: 'Amatic SC', cursive;
 }
 .t-button:hover{
     color: whitesmoke;
