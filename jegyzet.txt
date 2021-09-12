@@ -46,3 +46,7 @@ ikonok fejléchez
                         <a href="#" class="fa fa-instagram"></a>
                         <a href="#" class="fa fa-pinterest"></a>
                         <a href="#" class="fa fa-github"></a>
+
+
+
+www.mrkocka.hu, mrkocka.hu
