@@ -11,7 +11,15 @@ window.onload = () =>{ //once window loaded
             let filterName = selectedItem.target.getAttribute("data-name"); //getting data-name value of the user selected item and storing in a filtername variable
             filterImg.forEach((image)=>{
                 let filterImages = image.getAttribute("data-name");//getting image data-name value
-                if()
+                //iff user selected item data-name value is equal to image data-name value 
+                //or user selected item data-name value is equal to "all"
+                if((filterImages == filterName) || filterName == "ossz"){
+                    image.classList.remove("hide");
+                    image.classList.add("show");
+                }else{
+                    image.classList.add("hide");
+                    image.classList.remove("show");
+                }
             });
         }
     }
