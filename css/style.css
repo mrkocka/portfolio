@@ -488,14 +488,16 @@ margin-left: 15px;
 }
 .gallery{
     display: flex;
-    gap: 7px 7px;
+    justify-content: center;
     
 }
 .gallery .image.hide{
     display: none;
+    
 }
 .gallery .image.show{
     animation: animate 0.4s ease;
+    
 }
 @keyframes animate{
     0%{
@@ -509,6 +511,7 @@ margin-left: 15px;
     display: flex;
     width: 100%;
     overflow: hidden;
+    
 }
 .gallery .image img{
     width: 100%;
