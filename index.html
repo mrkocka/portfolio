@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/eadc95f819.js" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/eadc95f819.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./img/mr.logo_2.png" sizes="4x6" type="image/png">
     <title>Mr.Kocka.hu</title>
 </head>
@@ -118,6 +118,7 @@
                    <ul>
                     <li>Max. 3 oldalból álló honlap</li>
                     <li>Reszponzív (minden eszközön olvasható)</li>
+                    <li>Domain & Tárhely ügyintézés, beállítás </li>
                     <li>Ingyenes SSL (https)</li>
                     <li>Napi biztonsági mentés</li>
                     <li>PHP gyorsító</li>
@@ -137,6 +138,7 @@
                    <ul>
                        <li>Max. 5 oldalból álló honlap</li>
                        <li>Reszponzív (minden eszközön olvasható)</li>
+                       <li>Domain & Tárhely ügyintézés, beállítás </li>
                        <li>Ingyenes SSL (https)</li>
                        <li>Napi biztonsági mentés</li>
                        <li>PHP gyorsító<</li>
@@ -199,32 +201,40 @@
     <h2 class="headings">Kapcsolat</h2>
     <form action="" class="form">
         <input type="text" name="name" class="input" placeholder="Név">
-        <input type="email" name="email" class="input" placeholder="Email cím">
+        <input type="email" name="email" class="input" placeholder="E-mail Cím">
         <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Üzenet"></textarea>
         <input  class="btn" type="submit" value="Küldés" id="send">
     </form>
 </section>
 </main>
 <footer>
-    <section class="footer-flex-container">
-        <div class="footer-flex-item item1 f1-felx-box">
+    <section id="footerBox">
+        <div class="logoBox">
             <img src="./img/mr.logo_2.png" alt="mrkockalogo">
-            <p>COPYRIGHT &copy2021 Mr.Kocka </p>
         </div>
-        <div class="footer-flex-item item2 f2-felx-box">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-pinterest"></a>
-            <a href="https://github.com/mrkocka" target="_blank" class="fa fa-github"></a>
+        <div class="socialBox">
+            <div class="socialIcon">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="https://github.com/mrkocka" target="_blank" class="fa fa-github"></a>
+            </div>
+            <p class="tel"><a href="#" class="fas fa-mobile-alt"> 06 20 47 44 222</a></p>
+            <p class="email"><a href="#" class="fas fa-envelope-open-text"> info@mrkocka.hu</a></p>
         </div>
-        <div class="footer-flex-item item3 f3-flex-box">
-
-            <a href="#" class="fas fa-mobile-alt"> 0620 47 44 222</a>
-            <a href="#" class="fas fa-envelope-open-text"> info@mrkocka.hu</a>
+        <div class="textBox">
+            <a href="#">Sütik (cookie) kezelése</a>
+            <a href="#">Adatvédelmi irányelvek</a>
+            <a href="#">Impresszum</a>
+            <a href="#">Köszönettel tartozom</a>
         </div>
     </section>
+    <section id="cpoyArea">
+        <p>COPYRIGHT &copy2021 Mr.Kocka </p>
+    </section>
+
 </footer>
 </body>
 </html>

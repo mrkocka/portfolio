@@ -41,21 +41,37 @@
     width: 70%;
 }
 #send{
-    width: 20%;
+    width:auto;
 }
 
-/*   Footer   */
+/*-----------------------Footer------------------*/
 
-.item2{
-    width: 300px;
+#footerBox{
+    flex-direction: column;
 }
 
-
-.item2 a{
-    font-size: 2.5rem;
+.logoBox{
+    order: 2;
+    width: 100%;
+    align-items: center;
+    padding-left:0;
 }
-.f2-felx-box{
-    justify-content:space-between;
+.socialBox{
+    width: 100%;
+}
+
+.socialIcon{
+    justify-content: space-evenly;
+    width: 90%;
+}
+.socialIcon .fa{
+    font-size: 2rem;
+}
+
+.textBox{
+    width: 100%;
+    align-items: center;
+    padding-right:0;
 }
 
 
