@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Amatic SC', cursive;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
     
 
@@ -122,6 +122,18 @@ body{
     background-color: rgba(0, 0, 0, 0.897);
     color: #ffffffce;
 }
+.gitinfo{
+    text-align: center;
+}
+.gitinfo a{
+    font-family:'Open Sans Condensed', sans-serif;
+    color: #ffffffce;
+    font-weight: 600;
+}
+.gitinfo a:hover{
+    color: red;
+}
+
 #pic{
     display: flex;
     
@@ -213,6 +225,7 @@ body{
 
 .services, h2{
 color: #ffffffce;
+padding-top: 20px;
 }
 
 
@@ -220,6 +233,7 @@ color: #ffffffce;
     display: flex;
     flex-direction: column;
     padding: 20px;
+   
     
     
 }
@@ -231,12 +245,14 @@ color: #ffffffce;
     background-image: url(../img/black-bg.jpg);
     background-size:cover;
     background-repeat: no-repeat;
-   
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .box{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 550px;
     height:800px;
     border: 1px solid black;
@@ -249,6 +265,7 @@ color: #ffffffce;
     background-size: 100% 200%;
     transition: all .8s;
 }
+
 
 .box .headings{
     font-size: 4rem;
@@ -289,7 +306,7 @@ color: #ffffffce;
 
 .headingsCard{
     font-size: 4rem;
-    font-family: 'Amatic SC', cursive;
+    /* font-family: 'Amatic SC', cursive; */
    
 }
 
@@ -298,7 +315,8 @@ color: #ffffffce;
     margin-bottom: 1%;
     color: red;
     font-size: 3rem;
-    font-family: 'Amatic SC', cursive;
+    text-shadow: 1px 1px 2px black;
+   /*  font-family: 'Amatic SC', cursive; */
     font-weight:700;
 }
 
@@ -308,7 +326,7 @@ color: #ffffffce;
     margin-left: 5%;
     align-self: flex-end;
     color: black;
-    font-family: 'Amatic SC', cursive;
+    /* font-family: 'Amatic SC', cursive; */
 }
 .t-button:hover{
     color: whitesmoke;
@@ -318,6 +336,9 @@ color: #ffffffce;
     width: 80px;
     height: 80px;
 }
+
+
+
 /*------------------------------------------Contact Section------------------------------------*/
 #contact{
     display: flex;
@@ -378,9 +399,13 @@ color: #ffffffce;
 
 /* Footer Section */
 
+
 footer{
     background-color:rgba(245, 245, 245, 0.158);
     color: whitesmoke;
+}
+footer a {
+    text-decoration: none;
 }
 #footerBox{
     display: flex;
