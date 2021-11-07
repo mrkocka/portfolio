@@ -526,12 +526,12 @@ footer a {
     align-items: center;
     flex-wrap: wrap;
     color: whitesmoke;
-    outline: solid 1px whitesmoke;
+    /* outline: solid 1px whitesmoke; */
     
     
 }
 .pageTitle{
-    outline: solid 1px whitesmoke;
+    /* outline: solid 1px whitesmoke; */
     /* background-color:rgba(128, 128, 128, 0.911); */
     width: 50%;
     text-align: center;
@@ -555,15 +555,21 @@ footer a {
 
 /*------------------Sütik (cookie) kezelése------------------------------*/
 
+.pageTitle{
+    text-shadow: 1px 1px 2px black;
+    width: 80%;
+}
+
 .Paragraph{
-    outline: solid 1px whitesmoke;
-    width: 40%;
+   /*  outline: solid 1px whitesmoke; */
+    width: 80%;
     height: auto;
     padding: 1.4rem;;
     margin-bottom: 20px;
     font-size: 1.8rem;
     text-align: justify;
     font-family:'Open Sans Condensed', sans-serif;
+    text-shadow: 1px 1px 2px black;
 }
 .Paragraph p{
     font-family:'Open Sans Condensed', sans-serif;
@@ -581,7 +587,14 @@ footer a {
 }
 .question{
     font-weight: 700;
+    margin-bottom: .5rem;
 }
 .cookies{
     margin-top: 1rem;
+}
+
+.Paragraph ul{
+    font-size: 1.4rem;
+    padding: 1.3rem;
+    margin-top: .1rem;
 }
