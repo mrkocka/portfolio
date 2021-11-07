@@ -61,6 +61,7 @@ body{
     justify-content: center;
     align-items: center;
     color: #ffffffce ;
+    z-index: 1;
 }
 #home::before{
     content: "";
@@ -88,6 +89,7 @@ body{
     font-size: 5rem;
     text-align: center;
     margin:40px 0px;
+   
 }
 
 
@@ -455,9 +457,14 @@ footer a {
 .tel a{
     color: whitesmoke;
     font-size: 1.5rem;
+    font-family: 'Amatic SC', cursive;
 }
 .tel a:hover{
     color: red;
+}
+.tel .fas{
+    font-size: 1.5rem;
+    margin-right: .5rem;
 }
 
 .email a{
@@ -468,6 +475,11 @@ footer a {
 .email a:hover{
     color: red;
 }
+.email .fas{
+    font-size: 1.5rem;
+    margin-right: .3rem;
+}
+
 
 
 /*----------------------TextBox---------------------------------*/
@@ -598,3 +610,55 @@ footer a {
     padding: 1.3rem;
     margin-top: .1rem;
 }
+
+/*------------------Popup---------------------------------------------------------*/
+
+.popup{
+    background-color: rgba(192, 192, 192, 0.774);
+    width: 90%;
+    height: 55px;
+    position: sticky;
+    bottom: 5%;
+    left: 5%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    z-index: 2;
+    display: none;
+   
+}
+
+.popup p{
+    font-family:'Open Sans Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: -.3rem;
+    letter-spacing: .1rem;
+    position: relative;
+    
+}
+.popup a {
+    
+    font-family:'Open Sans Condensed', sans-serif;
+    color: black;
+
+    
+}
+
+.popuptext{
+/* outline: 1px solid whitesmoke;  */
+width: 98%; 
+display: flex;
+justify-content: center;
+}
+#close{
+  /* outline: 1px solid whitesmoke;  */
+    width: 2%;
+    text-align: end;
+    cursor: pointer;
+    font-size: 1rem;
+}
+#close .fas{
+    margin-right: .3rem;
+} 
