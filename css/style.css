@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'Amatic SC', cursive;
+    /* text-decoration: none; */
 }
+    
+
 html{
     scroll-behavior: smooth;
 }
@@ -58,6 +61,7 @@ body{
     justify-content: center;
     align-items: center;
     color: #ffffffce ;
+    z-index: 1;
 }
 #home::before{
     content: "";
@@ -85,6 +89,7 @@ body{
     font-size: 5rem;
     text-align: center;
     margin:40px 0px;
+   
 }
 
 
@@ -98,6 +103,7 @@ body{
     transition: .6s ease;
     font-family: 'Amatic SC', cursive;
     font-size: 1.2rem;
+    border-radius: 20px;
 }
 .btn:hover{
     cursor: pointer;
@@ -118,6 +124,18 @@ body{
     background-color: rgba(0, 0, 0, 0.897);
     color: #ffffffce;
 }
+.gitinfo{
+    text-align: center;
+}
+.gitinfo a{
+    font-family:'Open Sans Condensed', sans-serif;
+    color: #ffffffce;
+    font-weight: 600;
+}
+.gitinfo a:hover{
+    color: red;
+}
+
 #pic{
     display: flex;
     
@@ -127,6 +145,7 @@ body{
     margin-top: 3rem;
     width: 366px;
     height: 488px;
+    border-radius: 20px;
 }
 #intro{
     display: flex;
@@ -172,6 +191,7 @@ body{
 #experience img{
     width: 100%;
     
+    
 }
 
 
@@ -199,7 +219,7 @@ body{
     margin: 10px;
     cursor: pointer;
     transition: 0.3s;
-    
+    border-radius: 20px;
 }
 
 
@@ -207,6 +227,7 @@ body{
 
 .services, h2{
 color: #ffffffce;
+padding-top: 20px;
 }
 
 
@@ -214,6 +235,7 @@ color: #ffffffce;
     display: flex;
     flex-direction: column;
     padding: 20px;
+   
     
     
 }
@@ -225,12 +247,14 @@ color: #ffffffce;
     background-image: url(../img/black-bg.jpg);
     background-size:cover;
     background-repeat: no-repeat;
-   
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .box{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 550px;
     height:800px;
     border: 1px solid black;
@@ -238,11 +262,12 @@ color: #ffffffce;
     align-items: center;
     text-align: justify;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 20px;
     background: linear-gradient(to top, rgb(147,22,33)50%, #eeeeff 50%);
     background-size: 100% 200%;
     transition: all .8s;
 }
+
 
 .box .headings{
     font-size: 4rem;
@@ -283,7 +308,7 @@ color: #ffffffce;
 
 .headingsCard{
     font-size: 4rem;
-    font-family: 'Amatic SC', cursive;
+    /* font-family: 'Amatic SC', cursive; */
    
 }
 
@@ -292,7 +317,8 @@ color: #ffffffce;
     margin-bottom: 1%;
     color: red;
     font-size: 3rem;
-    font-family: 'Amatic SC', cursive;
+    text-shadow: 1px 1px 2px black;
+   /*  font-family: 'Amatic SC', cursive; */
     font-weight:700;
 }
 
@@ -302,7 +328,7 @@ color: #ffffffce;
     margin-left: 5%;
     align-self: flex-end;
     color: black;
-    font-family: 'Amatic SC', cursive;
+    /* font-family: 'Amatic SC', cursive; */
 }
 .t-button:hover{
     color: whitesmoke;
@@ -312,40 +338,64 @@ color: #ffffffce;
     width: 80px;
     height: 80px;
 }
-/* Contact Section*/
+
+
+
+/*------------------------------------------Contact Section------------------------------------*/
 #contact{
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
+    align-items: center;
+ /*    box-sizing: border-box; */
     background-color: rgba(0, 0, 0, 0.897);
     color: #ffffffce;
     padding: 20px;
+    margin-bottom: 100px;
 }
 .form{
+    background: url(../img/massageBg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
     margin: 20px 0px;
+    /* outline: 1px solid whitesmoke; */
+    padding-top: 40px;
+    padding-bottom:40px;
+    width: 80%;
+   
 }
 .input{
     padding: 12px;
     margin: 15px;
     width: 30%;
     border: none;
+    border-radius: 20px;
     outline: none;
+    font-size: 1.3rem;
+    background-color: rgba(245, 245, 245, 0.856);
+
 }
+
 #msg{
-    width: 20%;
+    width: 40%;
     padding: 10px;
     margin: 15px;
     border: none;
+    border-radius: 20px;
     outline: none;
+    font-size: 1.3rem;
+    background-color: rgba(245, 245, 245, 0.856);
 }
 
 #send:hover{
     cursor: pointer;
     box-shadow: 0 0 10px white;
+  
 }
 
 
@@ -353,79 +403,120 @@ color: #ffffffce;
 
 
 footer{
-    background-color:rgba(128, 128, 128, 0.158);
+    background-color:rgba(245, 245, 245, 0.158);
+    color: whitesmoke;
 }
-
-footer, a{
-    color: #ffffffce;
+footer a {
     text-decoration: none;
 }
+#footerBox{
+    display: flex;
+    justify-content: space-between;
+    height:auto;
 
-.footer-flex-container{
+}
+/*---------------------Logo-----------------------------------*/
+.logoBox{
+    height: 168px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding-left:4vh ;
+    
+}
+
+.logoBox img{
+    width: 10vh;
+    margin-top: 15px;
+}
+
+/*-------------------Social Icon@tell,email--------------------*/
+.socialBox{
+    height: 168px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.socialIcon{
+    width: 90%;
+    text-align: center;
     display: flex;
     justify-content: space-between;
 }
-/* 1. item logo@copy */
 
-.item1{ 
-margin-left: 15px;
+.socialIcon .fa{
+    font-size: 2.6rem;
+    text-decoration: none;
+    color: whitesmoke;
 }
-.item1 p{
-    margin-top: 15px;
-    margin-bottom: 15px;
+.socialIcon .fa:hover{
+    color: red;
 }
-.f1-felx-box{
+.tel a{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: 'Amatic SC', cursive;
+}
+.tel a:hover{
+    color: red;
+}
+.tel .fas{
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+
+.email a{
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.email a:hover{
+    color: red;
+}
+.email .fas{
+    font-size: 1.5rem;
+    margin-right: .3rem;
+}
+
+
+
+/*----------------------TextBox---------------------------------*/
+.textBox{
+   /*  outline: 1px solid whitesmoke;
+    background-color: wheat; */
+    height: 168px;
+    width: 33%;
     display: flex;
     flex-direction: column;
+    justify-content:space-around;
     align-items: center;
+ /*    padding-right:8vh ; */
+}
+.textBox a{
+    color: whitesmoke;
+    font-size: 1.2rem;
 }
 
-.footer-flex-item img {
-    width: 8vh;
-    margin-top: 15px;
-}
-
-/* 2. item socila_media */
-.item2{
-    width: 600px;
-}
-.item2 a{
-    font-size: 3rem;
-}
-
-.item2 a:hover{
-    color: rgb(147,22,33);
-   
+.textBox a:hover{
+    color: red;
 }
 
 
-.f2-felx-box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
 
-
-/* 3. item adress_tel */
-.f3-flex-box {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+/*---------------------Copy------------------------------------*/
+#cpoyArea{
+    text-align: center;
     font-size: 1.3rem;
-    align-items: center;
+    margin-top: 1rem;
+    letter-spacing: .7rem;
 }
 
-.item3{
-    margin-right: 15px;
-    
-}
-.item3 a:hover{
-    color: rgb(147,22,33);
-}
 
-/*------- Alapcsomag, Közepes csomag, Nagy csomag, Extra csomag------------------------ */
+
+
+/*------- Alapcsomag, Közepes csomag, Nagy csomag, Sütik------------------------ */
 
 
 #pageHeader{
@@ -437,25 +528,33 @@ margin-left: 15px;
 }
 
 #textSection{
-    height: auto;
+    height:auto;
     width: 90%;
     margin-top: -700px;
     background-color:rgba(128, 128, 128, 0.911);
     display: flex;
     flex-direction: column;
+    align-self: center;
+    align-items: center;
     flex-wrap: wrap;
     color: whitesmoke;
+    /* outline: solid 1px whitesmoke; */
+    
     
 }
-.boxItem{
-    outline: solid 1px whitesmoke;
+.pageTitle{
+    /* outline: solid 1px whitesmoke; */
+    /* background-color:rgba(128, 128, 128, 0.911); */
+    width: 50%;
     text-align: center;
+    margin-bottom: 20px;
+    
 }
 
-.boxItem h3{
+.pageTitle h3{
     font-size: 3rem;
     font-family: 'Amatic SC', cursive;
-    padding: 1%;
+    padding: .5rem;
 
 }
 
@@ -466,58 +565,100 @@ margin-left: 15px;
 }
 
 
-/*----------------Gallery-----------------------------*/
+/*------------------Sütik (cookie) kezelése------------------------------*/
 
-.galleryButton{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 1%;
-    margin-top: 1%;
-    
+.pageTitle{
+    text-shadow: 1px 1px 2px black;
+    width: 80%;
 }
 
-.galleryButton button{
-    margin: 7px;
+.Paragraph{
+   /*  outline: solid 1px whitesmoke; */
+    width: 80%;
+    height: auto;
+    padding: 1.4rem;;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: justify;
+    font-family:'Open Sans Condensed', sans-serif;
+    text-shadow: 1px 1px 2px black;
 }
-.galleryButton button.active{
-    background-color:white;
-    color: black;
-    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
-    font-weight: bold;
+.Paragraph p{
+    font-family:'Open Sans Condensed', sans-serif;
 }
-.gallery{
+.Paragraph a{
+    color: whitesmoke;
+}
+
+.Paragraph a:hover{
+    color: red;
+}
+
+.Paragraph ul li{
+    font-family:'Open Sans Condensed', sans-serif;
+}
+.question{
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+.cookies{
+    margin-top: 1rem;
+}
+
+.Paragraph ul{
+    font-size: 1.4rem;
+    padding: 1.3rem;
+    margin-top: .1rem;
+}
+
+/*------------------Popup---------------------------------------------------------*/
+
+.popup{
+    background-color: rgba(192, 192, 192, 0.774);
+    width: 90%;
+    height: 55px;
+    position: sticky;
+    bottom: 5%;
+    left: 5%;
+    border-radius: 20px;
     display: flex;
-    justify-content: center;
-    
-}
-.gallery .image.hide{
+    justify-content: space-evenly;
+    padding: 10px;
+    z-index: 2;
     display: none;
+   
+}
+
+.popup p{
+    font-family:'Open Sans Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: -.3rem;
+    letter-spacing: .1rem;
+    position: relative;
     
 }
-.gallery .image.show{
-    animation: animate 0.4s ease;
+.popup a {
+    
+    font-family:'Open Sans Condensed', sans-serif;
+    color: black;
+
     
 }
-@keyframes animate{
-    0%{
-        transform: scale(0.5);
-    }
-    100%{
-        transform: scale(1);
-    }
+
+.popuptext{
+/* outline: 1px solid whitesmoke;  */
+width: 98%; 
+display: flex;
+justify-content: center;
 }
-.gallery .image span{
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    
+#close{
+  /* outline: 1px solid whitesmoke;  */
+    width: 2%;
+    text-align: end;
+    cursor: pointer;
+    font-size: 1rem;
 }
-.gallery .image img{
-    width: 100%;
-    vertical-align: middle;
-    transform: all 0.3s ease;
-}
-.gallery .image:hover img{
-    transform: scale(1.1);
-}
+#close .fas{
+    margin-right: .3rem;
+} 
