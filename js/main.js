@@ -4,7 +4,7 @@ window.addEventListener("load",function(){
             document.querySelector(".popup").style.
             display = "flex";
         },
-        2000
+        3000
     )
 });
 
