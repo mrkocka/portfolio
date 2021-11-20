@@ -235,6 +235,9 @@ padding-top: 20px;
     display: flex;
     flex-direction: column;
     padding: 20px;
+    background-image: url(../img/black-bg.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
    
     
     
@@ -244,9 +247,9 @@ padding-top: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
     box-sizing: border-box;
-    background-image: url(../img/black-bg.jpg);
+    /* background-image: url(../img/black-bg.jpg);
     background-size:cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -256,7 +259,7 @@ padding-top: 20px;
     flex-direction: column;
     flex-wrap: wrap;
     width: 550px;
-    height:800px;
+    height:auto;
     border: 1px solid black;
     margin: 10px;
     align-items: center;
@@ -268,6 +271,11 @@ padding-top: 20px;
     transition: all .8s;
 }
 
+.attention{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2rem;
+}
 
 .box .headings{
     font-size: 4rem;
@@ -611,6 +619,27 @@ footer a {
     margin-top: .1rem;
 }
 
+
+/*------------------Services Page---------------------------------------------------------*/
+
+.wpListP{
+    margin-left: 2rem;
+}
+ 
+.wpList li {
+        margin-left: 3rem;
+}
+
+.ParagraphExtra{
+    width: 600px;
+   /*  outline: 1px solid whitesmoke; */
+    font-family:'Open Sans Condensed', sans-serif;
+    padding: 1rem;
+}
+.ParagraphExtra p{
+    font-family:'Open Sans Condensed', sans-serif;
+    font-size: 1.3rem;
+}
 /*------------------Popup---------------------------------------------------------*/
 
 .popup{

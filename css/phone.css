@@ -124,3 +124,14 @@
 .popup p{
 font-size: .8rem;
 } 
+
+
+/*------------------Services Page---------------------------------------------------------*/
+
+
+.ParagraphExtra{
+    width: 300px;
+  
+    font-family:'Open Sans Condensed', sans-serif;
+    padding: 1rem;
+}
