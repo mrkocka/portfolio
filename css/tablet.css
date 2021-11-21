@@ -17,17 +17,12 @@
 }
 
 
-
-
 /*About*/
 #pic{
     flex-direction: column;
     align-items: center;
 }
-/* #pic img{
-    width: 275px;
-    height: 367px;
-} */
+
 #intro h2, h3 {
     text-align: center;
     
