@@ -492,7 +492,7 @@ footer a {
 
 /*----------------------TextBox---------------------------------*/
 .textBox{
-   /*  outline: 1px solid whitesmoke;
+   /* outline: 1px solid whitesmoke;
     background-color: wheat; */
     height: 168px;
     width: 33%;
@@ -519,6 +519,12 @@ footer a {
     font-size: 1.3rem;
     margin-top: 1rem;
     letter-spacing: .7rem;
+}
+/*------------------------Verzio-------------------------------*/
+.verzio{
+    text-align: center;
+    margin-top: 1rem;
+    letter-spacing: .1rem;
 }
 
 
