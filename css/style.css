@@ -143,9 +143,9 @@ body{
 
 #pic img{
     margin-top: 3rem;
-    width: 366px;
-    height: 488px;
-    border-radius: 20px;
+    width: 22.875rem;
+    height: 25.938rem;
+    border-radius: 1.25rem;
 }
 #intro{
     display: flex;
