@@ -647,6 +647,12 @@ footer a {
     font-family:'Open Sans Condensed', sans-serif;
     font-size: 1.3rem;
 }
+.money{
+    font-family:'Open Sans Condensed', sans-serif;
+    font-size: 1.3rem;
+    color:black;
+    text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.486);
+}
 /*------------------Popup---------------------------------------------------------*/
 
 .popup{
