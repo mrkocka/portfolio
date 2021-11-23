@@ -245,24 +245,25 @@ padding-top: 20px;
 }
 .row{
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     flex-wrap: wrap;
-    box-sizing: border-box;
-    /* background-image: url(../img/black-bg.jpg);
-    background-size:cover;
-    background-repeat: no-repeat; */
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.row a {
+    text-decoration: none;
+    color: black;
+    
 }
 
 .box{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 550px;
+    width: 34.375rem;
     height:auto;
     border: 1px solid black;
-    margin: 10px;
+    margin: 20px;
     align-items: center;
     text-align: justify;
     padding: 20px;
@@ -310,6 +311,10 @@ padding-top: 20px;
     font-size: 1.4rem;
 }
 
+.box h3{
+    text-align: center;
+}
+
 .careIcon{
     font-size: 5.5rem;
     margin-bottom: 2%;
@@ -317,9 +322,11 @@ padding-top: 20px;
 
 .headingsCard{
     font-size: 4rem;
-    /* font-family: 'Amatic SC', cursive; */
-   
+
+    text-align: center;
 }
+
+
 
 .price{
     margin-top: 1%;
@@ -327,27 +334,19 @@ padding-top: 20px;
     color: red;
     font-size: 3rem;
     text-shadow: 1px 1px 2px black;
-   /*  font-family: 'Amatic SC', cursive; */
     font-weight:700;
 }
 
-.t-button{
-    font-size: 2rem;
-    margin-top: .5%;
-    margin-left: 5%;
-    align-self: flex-end;
-    color: black;
-    /* font-family: 'Amatic SC', cursive; */
-}
-.t-button:hover{
-    color: whitesmoke;
-}
 
 .box img{
     width: 80px;
     height: 80px;
 }
 
+.box .page1{
+    display: flex;
+    justify-content: center;
+}
 
 
 /*------------------------------------------Contact Section------------------------------------*/
