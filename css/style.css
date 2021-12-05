@@ -28,6 +28,7 @@ body{
     background-color: rgba(0, 0, 0, 0.651);
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 .navbar ul{
     display: flex;
@@ -68,7 +69,7 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-    background: url(../img/klavi_bg.jpg) no-repeat center/cover;
+    background: url(../img/klavi_bg_optimized.jpg) no-repeat center/cover;
     height: 900px;
     width: 100%;
     z-index: -1;
@@ -189,7 +190,8 @@ body{
 }   
 
 #experience img{
-    width: 100%;
+    width: 5rem;
+    height: 5rem;
     
     
 }
@@ -212,14 +214,73 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     box-sizing: border-box;
+    
 }
 .gallery img{
-    width: 500px;
-    height: 333px;
-    margin: 10px;
+    width: 31.25rem;
+    height: 20.813rem;
+    margin: 0.625rem;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 20px;
+    border-radius:1.25rem;
+}
+
+
+.image{
+    position: relative;
+   
+
+}
+
+.image img{
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .image:hover .middle {
+    opacity: 1;
+  }
+  .middleText {
+    background-color: rgba(0, 0, 0, 0.74);
+    color: whitesmoke;
+    width: 31.25rem;
+    height: 20.813rem;
+    border-radius:1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+.middleText1{
+    font-size: 3rem;
+    letter-spacing: .3rem;
+    text-shadow: 1px 1px 2px black;
+    
+}
+
+.middleText2{
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 2rem;
+}
+
+
+.middle a{
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 
@@ -244,24 +305,25 @@ padding-top: 20px;
 }
 .row{
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     flex-wrap: wrap;
-    box-sizing: border-box;
-    /* background-image: url(../img/black-bg.jpg);
-    background-size:cover;
-    background-repeat: no-repeat; */
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.row a {
+    text-decoration: none;
+    color: black;
+    
 }
 
 .box{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 550px;
+    width: 34.375rem;
     height:auto;
     border: 1px solid black;
-    margin: 10px;
+    margin: 20px;
     align-items: center;
     text-align: justify;
     padding: 20px;
@@ -309,6 +371,10 @@ padding-top: 20px;
     font-size: 1.4rem;
 }
 
+.box h3{
+    text-align: center;
+}
+
 .careIcon{
     font-size: 5.5rem;
     margin-bottom: 2%;
@@ -316,9 +382,11 @@ padding-top: 20px;
 
 .headingsCard{
     font-size: 4rem;
-    /* font-family: 'Amatic SC', cursive; */
-   
+
+    text-align: center;
 }
+
+
 
 .price{
     margin-top: 1%;
@@ -326,27 +394,19 @@ padding-top: 20px;
     color: red;
     font-size: 3rem;
     text-shadow: 1px 1px 2px black;
-   /*  font-family: 'Amatic SC', cursive; */
     font-weight:700;
 }
 
-.t-button{
-    font-size: 2rem;
-    margin-top: .5%;
-    margin-left: 5%;
-    align-self: flex-end;
-    color: black;
-    /* font-family: 'Amatic SC', cursive; */
-}
-.t-button:hover{
-    color: whitesmoke;
-}
 
 .box img{
     width: 80px;
     height: 80px;
 }
 
+.box .page1{
+    display: flex;
+    justify-content: center;
+}
 
 
 /*------------------------------------------Contact Section------------------------------------*/
@@ -371,10 +431,10 @@ padding-top: 20px;
     box-sizing: border-box;
     align-items: center;
     margin: 20px 0px;
-    /* outline: 1px solid whitesmoke; */
     padding-top: 40px;
     padding-bottom:40px;
     width: 80%;
+    border-radius: 20px;
    
 }
 .input{
@@ -552,13 +612,11 @@ footer a {
     align-items: center;
     flex-wrap: wrap;
     color: whitesmoke;
-    /* outline: solid 1px whitesmoke; */
+    
     
     
 }
 .pageTitle{
-    /* outline: solid 1px whitesmoke; */
-    /* background-color:rgba(128, 128, 128, 0.911); */
     width: 50%;
     text-align: center;
     margin-bottom: 20px;
@@ -646,6 +704,46 @@ footer a {
     font-family:'Open Sans Condensed', sans-serif;
     font-size: 1.3rem;
 }
+.money{
+    font-family:'Open Sans Condensed', sans-serif;
+    font-size: 1.3rem;
+    color:black;
+    text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.486);
+}
+
+/*-------------------adatvedelem-------------------*/
+.concepts{
+    margin-top: 1rem;
+    
+}
+
+
+/*-------------------table-------------------*/
+table.customTable {
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: whitesmoke;
+    border-style: solid;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.8rem;
+  }
+
+  
+  table.customTable td, table.customTable th {
+    border-width: 1px;
+    border-color: whitesmoke;
+    border-style: solid;
+    padding: 10px;
+  }
+
+  table.customTable td{
+      text-align: center;
+  }
+  
+
+
+
 /*------------------Popup---------------------------------------------------------*/
 
 .popup{
