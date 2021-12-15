@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Nunito:ital,wght@0,200;0,600;1,300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1024px)" href="./css/monitor.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:530px)" href="./css/phone.css">
+    <link rel="stylesheet" media="screen and (max-width:375px)" href="./css/Mphone.css">
+    <link rel="stylesheet" media="screen and (max-width:320px)" href="./css/Sphone.css">
+    <title>Virtuális Karácsonyi Kedvesség</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+<body>
+    <main>
+        <div id="loginContainer">
+            <div class="flag">
+                <a href="#"><img src="./img/hungary.png" alt="hungaryFlag"></a>
+                <a href="#"><img src="./img/germany.png" alt="germanyFlag"></a>
+                <a href="#"><img src="./img/united-states.png" alt="USAFlag"></a>
+            </div>
+            <div class="christmasImg">
+                <img src="./img/koszoru.png" alt="ChristmasImage">
+            </div>
+            <div class="centralText">
+                <p>Mit szólnál hozzá, ha idén feldíszíthetnél egy virtuális fenyőfát? Biztosra veszem, hogy még nem csináltál ilyet. De most ez ingyen van, és ráadásul még környezetbarát is. Írd be a keresztneved és már indulhat is a móka! </p>
+            </div>
+            <div class="typeArea">
+                <input type="text"  id="nametext" placeholder="Hogyan szólíthatlak?">
+            </div>
+            <div class="buttonArea">
+                <button id="GoButton" onclick="toggle()"> Kezdjunk bele!</button>
+            </div>
+            <div class="thanks">
+                <p>Köszönet az ötletért, és a kódért!</p>
+                <p><a href="https://lenadesign.org/2021/11/16/decorate-the-christmas-tree-css-jquery-ui-drag-and-drop/" target="_blank"><strong>--Lina oldala--</strong></a></p>
+            </div>
+        </div>
+
+       
+
+    </main>
+
+    <div id="treeContainer">
+            
+        <div id="christmas-decorations" class="christmas-decorations">
+            <div class="tree">
+              <div id="dropzone" class="tree-bottom"></div>
+              <div id="dropzone-1"class="tree-middle"></div>
+              <div id="dropzone-2" class="tree-top"></div>
+            </div>
+            <div id="decorations" class="decorations">
+              <p class="text">Csak húzd a fára! ;)<p>
+              <div id="ball1"></div>
+              <div id="tree-star"></div>
+              <div id="ball2"></div>
+              <div id="ball3"></div>
+              <div id="ball4"></div>
+              <div id="ball5"></div>
+              <div id="ball6"></div>
+              <div id="bow"></div>
+              <div id="bow2"></div>
+              <div id="bow3"></div>
+            </div>
+            <div id="game-complete"><br/>Boldog Karácsonyt <span id="username"></span>!!
+            </div>
+          </div>
+
+        
+    </div>
+    
+
+<script src="./js/main.js"></script>
+
+</body>
+</html>

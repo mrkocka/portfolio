@@ -1,0 +1,28 @@
+
+#loginContainer{
+  width: 21rem;
+}
+
+
+.christmasImg img{
+  margin-top:.5rem ;
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+
+.thanks{
+  margin-top: .8rem;
+}
+
+
+
+#game-complete {
+    font-size:25px;
+    color: #ae2012;
+    top:180px;
+    left:-385px;
+    width: 800px;
+    z-index:4;
+    outline: white 1px solid;
+  }
